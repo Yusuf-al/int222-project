@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .min {
+      position: relative;
+      height: 100vh;
+    }
+    .box {
+      position: absolute;
+      top: 50%;
+      right: 00%;
+      color: burlywood;
+      font-family: serif;
+      margin: auto;
+      padding: 20px;
+      font-size: 20px;
+      transform: translate(-50%, -50%);
+      height: 300px;
+      width: 700px;
+      background-image: linear-gradient(
+        to right bottom,
+        rgb(1, 51, 75),
+        rgb(1, 49, 121)
+      );
+      border-radius: 20px;
+      box-shadow: 0px 5px 20px 5px rgba(49, 49, 49, 0.8);
+    }
+    .line {
+      width: 100%;
+      height: 15px;
+      background-color: cornflowerblue;
+      border-radius: 20px;
+      margin: 10px 0;
+    }
+    .bar1 {
+      height: 100%;
+      width: 92%;
+      background-color: rgba(7, 7, 129, 0.76);
+      border-radius: 10px;
+      position: relative;
+      animation: bar1 2s ease-out;
+    }
+
+    
+    .bar2 {
+      height: 100%;
+      width: 82%;
+      background-color: rgba(7, 7, 129, 0.76);
+      border-radius: 10px;
+      position: relative;
+      animation: bar2 2s ease-out;
+    }
+  
+    .bar3 {
+      height: 100%;
+      width: 75%;
+      background-color: rgba(7, 7, 129, 0.76);
+      border-radius: 10px;
+      position: relative;
+      animation: bar3 2s ease-out;
+    }
+    
+    .bar4 {
+      height: 100%;
+      width: 80%;
+      background-color: rgba(7, 7, 129, 0.76);
+      border-radius: 10px;
+      position: relative;
+      animation: bar4 2s ease-out;
+    }
+    
+   
+    .bg {
+      position: absolute;
+      height: 135%;
+      width: 20px;
+      top: -2.5px;
+      right: 0px;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 17px 10px rgb(4 246 255 / 80%);
+    }
+    .bg span {
+      position: absolute;
+      top: 1.6px;
+      right: -48px;
+      color: rgb(255 255 255);
+      font-size: 15px;
+    }
+    @keyframes bar1 {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 92%;
+      }
+    }
+    @keyframes bar2 {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 82%;
+      }
+    }
+    @keyframes bar3 {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+    @keyframes bar4 {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+  </style>
+  <body>
+    <section>
+      <div class="min">
+        <div class="box">
+          <p>HTML</p>
+          <div class="line">
+            <div class="bar1">
+              <span class="bg"><span>92%</span></span>
+            </div>
+          </div>
+          <p>CSS</p>
+          <div class="line">
+            <div class="bar2"><span class="bg"><span>82%</span</span></div>
+          </div>
+          <p>JAVASCRIPT</p>
+          <div class="line">
+            <div class="bar3"><span class="bg"><span>70%</span></span></div>
+          </div>
+          <p>PHP</p>
+          <div class="line">
+            <div class="bar4"><span class="bg"><span>80%</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

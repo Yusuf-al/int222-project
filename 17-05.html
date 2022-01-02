@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logobox">
+        <img src="icon1.png" alt="Logo" class="logoItem" />
+      </div>
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="textBox">
+        <h3 class="authorDetails">
+          <span class="authorName">Hello, Everyone !🖐 </span>
+          <span class="authorPro"
+            >I am YUSUF AL NAIEM. A Full stack WebDeveloper</span
+          >
+        </h3>
+        <a href="#" class="btn btn-white">Message ME</a>
+      </div>
+      <div class="nav nav-bg1">
+        <div class="nav nav-bg2">
+          <div class="nav nav-bg3">
+            <button class="nav-btn close-btn"><i class="fas fa-times"></i></button>
+            <ul class="list">
+              <li><a href="#"><i class="fas fa-home padding"></i>HOME</a></li>
+              <li><a href="#"><i class="fas fa-address-card padding"></i>ABOUT</a></li>
+              <li><a href="#"><i class="fas fa-blog padding"></i>PROJECTS</a></li>
+              <li><a href="#"><i class="far fa-envelope-open padding"></i>CONTACT</a></li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="lowerBorder"></div>
+    <section>
+      <div class="min">
+        <div class="box">
+          <p>HTML</p>
+          <div class="line">
+            <div class="bar1">
+              <span class="bg"><span>92%</span></span>
+            </div>
+          </div>
+          <p>CSS</p>
+          <div class="line">
+            <div class="bar2"><span class="bg"><span>82%</span</span></div>
+          </div>
+          <p>JAVASCRIPT</p>
+          <div class="line">
+            <div class="bar3"><span class="bg"><span>70%</span></span></div>
+          </div>
+          <p>PHP</p>
+          <div class="line">
+            <div class="bar4"><span class="bg"><span>80%</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+const openBtn = document.querySelector('.open-btn');
+const closeBtn = document.querySelector('.close-btn'); 
+const nav = document.querySelectorAll('.nav');
+
+openBtn.addEventListener('click',()=>{
+  nav.forEach(nav_el=>nav_el.classList.add('visible'))
+})
+
+closeBtn.addEventListener('click',()=>{
+  nav.forEach(nav_el=>nav_el.classList.remove('visible'))
+})
+
+</script>
